@@ -1,3 +1,4 @@
+import {useForm,ValidationError} from '@formspree/react';
 import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
@@ -29,16 +30,11 @@ const ContactForm: FC = memo(() => {
     [data],
   );
 
-  const handleSendMessage = useCallback(
-    async (event: React.FormEvent<HTMLFormElement>) => {
-      event.preventDefault();
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-      console.log('Data to send: ', data);
-    },
-    [data],
-  );
+  const [state, handleSendMessage] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_API_KEY ?? '');
+
+  if (state.succeeded) {
+    return <p>Thank you for your message! I appreciate your contact. I will get back to you as soon as I can!</p>;
+  }
 
   const inputClasses =
     'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
@@ -55,6 +51,7 @@ const ContactForm: FC = memo(() => {
         required
         type="email"
       />
+      <ValidationError errors={state.errors} field="email" prefix="Email" />
       <textarea
         className={inputClasses}
         maxLength={250}
@@ -64,9 +61,11 @@ const ContactForm: FC = memo(() => {
         required
         rows={6}
       />
+      <ValidationError errors={state.errors} field="message" prefix="Message" />
       <button
         aria-label="Submit contact form"
         className="w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
+        disabled={state.submitting}
         type="submit">
         Send Message
       </button>
