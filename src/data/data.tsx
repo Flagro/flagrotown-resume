@@ -277,18 +277,23 @@ export const fact: TestimonialSection = {
   facts: [
     {
       name: 'Random fact',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      //image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      text: 'I have a keen eye for detail, ensuring high-quality code and deliverables in my development projects.',
     },
     {
       name: 'Random fact',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      //image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      text: 'I have a strong background in mathematics, which enables me to approach problem-solving from a logical and analytical perspective.',
     },
     {
       name: 'Random fact',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      //image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      text: 'I have a passion for innovation and enjoy exploring cutting-edge technologies to develop creative and impactful solutions.',
+    },
+    {
+      name: 'Random fact',
+      text: 'I have extensive experience conducting demonstrations, including trainings, related to the integration of digital automation capabilities.',
+    },
+    {
+      name: 'Random fact',
+      text: 'As a hobby, I am a music producer proficient in playing guitar, bass, and drums, in addition to utilizing MIDI techniques.',
     },
   ],
 };
