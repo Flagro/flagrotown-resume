@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 
 import {isApple, isMobile} from '../../config';
-import {SectionId, fact} from '../../data/data';
+import {fact, SectionId} from '../../data/data';
 import {Fact} from '../../data/dataDef';
 import useInterval from '../../hooks/useInterval';
 import useWindow from '../../hooks/useWindow';
@@ -87,7 +87,7 @@ const Facts: FC = memo(() => {
               {facts.map((fact, index) => {
                 const isActive = index === activeIndex;
                 return (
-                  <Fact isActive={isActive} key={`${fact.name}-${index}`} fact={fact} />
+                  <Fact fact={fact} isActive={isActive} key={`${fact.name}-${index}`} />
                 );
               })}
             </div>
