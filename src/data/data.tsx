@@ -33,7 +33,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: "Anton Potapov's Resume",
-  description: "Example site built with Tim Baker's react resume template",
+  description: "Anton Potapov's Resume build with Next.js and Tailwind CSS",
 };
 
 /**
