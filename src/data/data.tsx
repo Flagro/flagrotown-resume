@@ -66,7 +66,7 @@ export const heroData: Hero = {
         <strong className="text-stone-100">NLP tasks</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Podgorica</strong>,
+        In my free time, you can catch me training in <strong className="text-stone-100">Podgorica</strong>,
         plucking my <strong className="text-stone-100">guitar</strong>, or exploring beautiful{' '}
         <strong className="text-stone-100">Mountains of Montenegro</strong>.
       </p>
@@ -103,7 +103,7 @@ export const aboutData: About = {
       text: 'Moscow State University, Bachelor in Applied Mathemathics and Computer Science',
       Icon: AcademicCapIcon,
     },
-    {label: 'Employment', text: 'Currently Self-employed', Icon: BuildingOffice2Icon},
+    {label: 'Employment', text: 'C++ Developer, Pet projecting multiple LLM projects', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -236,9 +236,9 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'November 2021 - June 2023',
+    date: 'August 2020 - June 2023',
     location: 'KPMG Russia',
-    title: 'Data Analyst',
+    title: 'Data Analyst, LLM Engineer',
     content: (
       <p>
         Developing tools for automating the analysis and control of project data. 
@@ -252,7 +252,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'September 2021 - January 2023',
+    date: 'September 2021 - present',
     location: 'Research Computing Center of Moscow State University',
     title: 'C++ Developer',
     content: (
