@@ -30,7 +30,7 @@ const ContactForm: FC = memo(() => {
     [data],
   );
 
-  const [state, handleSendMessage] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_API_KEY ?? '');
+  const [state, handleSendMessage] = useForm(process.env.NEXT_PUBLIC_FORMSPREE_ID!);
 
   if (state.succeeded) {
     return <p>Thank you for your message! I appreciate your contact. I will get back to you as soon as I can!</p>;
