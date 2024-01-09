@@ -27,11 +27,14 @@ jobs:
         run: yarn build
         env:
           NEXT_PUBLIC_FORMSPREE_ID: ${{ secrets.NEXT_PUBLIC_FORMSPREE_ID }}
+      
+      - name: Export to Static HTML
+        run: yarn export
 
       - name: Deploy to S3
         run: |
           aws --endpoint-url=${{ secrets.ENDPOINT_URL }} s3 rm s3://flagrotown.com/ --recursive
-          aws --endpoint-url=${{ secrets.ENDPOINT_URL }} s3 cp --recursive ./.next/static/ s3://flagrotown.com/
+          aws --endpoint-url=${{ secrets.ENDPOINT_URL }} s3 cp --recursive ./out/ s3://flagrotown.com/
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
