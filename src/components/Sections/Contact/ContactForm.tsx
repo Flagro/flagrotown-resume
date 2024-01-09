@@ -1,4 +1,4 @@
-import {useForm,ValidationError} from '@formspree/react';
+import {useForm, ValidationError} from '@formspree/react';
 import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {

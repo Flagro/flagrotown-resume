@@ -66,8 +66,8 @@ export const heroData: Hero = {
         <strong className="text-stone-100">NLP tasks</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time, you can catch me training in <strong className="text-stone-100">Podgorica</strong>,
-        plucking my <strong className="text-stone-100">guitar</strong>, or exploring beautiful{' '}
+        In my free time, you can catch me training in <strong className="text-stone-100">Podgorica</strong>, plucking my{' '}
+        <strong className="text-stone-100">guitar</strong>, or exploring beautiful{' '}
         <strong className="text-stone-100">Mountains of Montenegro</strong>.
       </p>
     </>
@@ -188,49 +188,57 @@ export const education: TimelineItem[] = [
   {
     date: 'September 2019 - June 2023',
     location: 'Moscow State Univesity',
-    title: 'Bachelor\'s degree in Applied Mathematics and Computer Science',
-    content: <p>
-      At Moscow State University's Faculty of Computational Mathematics and Cybernetics, 
-      I acquired a solid mathematical foundation and honed my programming skills in <strong>C/C++ and ASM</strong>. 
-      I gained hands-on experience in software development and delved into high-performance computing (HPC) 
-      and distributed systems, utilizing technologies like <strong>CUDA, OpenMP, and MPI</strong>. My university years were 
-      dedicated to pushing the boundaries of computational mathematics and computer science, equipping me with 
-      a strong skill set for software development and beyond.
-    </p>,
+    title: "Bachelor's degree in Applied Mathematics and Computer Science",
+    content: (
+      <p>
+        At Moscow State University's Faculty of Computational Mathematics and Cybernetics, I acquired a solid
+        mathematical foundation and honed my programming skills in <strong>C/C++ and ASM</strong>. I gained hands-on
+        experience in software development and delved into high-performance computing (HPC) and distributed systems,
+        utilizing technologies like <strong>CUDA, OpenMP, and MPI</strong>. My university years were dedicated to
+        pushing the boundaries of computational mathematics and computer science, equipping me with a strong skill set
+        for software development and beyond.
+      </p>
+    ),
   },
   {
     date: 'September 2016 - June 2019',
     location: 'Moscow Institute of Physics and Technology',
     title: 'Correspondence Physics and Technology School (CPTS) at MIPT',
-    content: <p>
-      The invaluable education I received during my years at the Correspondence Physics and Technology School 
-      (CPTS) at MIPT played a pivotal role in shaping my university experience. It provided me with a strong 
-      foundation in both mathematics and physics, which proved to be instrumental throughout my academic journey.
-      </p>,
+    content: (
+      <p>
+        The invaluable education I received during my years at the Correspondence Physics and Technology School (CPTS)
+        at MIPT played a pivotal role in shaping my university experience. It provided me with a strong foundation in
+        both mathematics and physics, which proved to be instrumental throughout my academic journey.
+      </p>
+    ),
   },
   {
     date: 'September 2015 - June 2019',
     location: 'Bauman Moscow State Technical University',
     title: 'Physics and Mathematics Lyceum No. 1580 at Bauman Moscow State Technical University',
-    content: <p>
-      During my time at my high and middle school, I acquired a strong mathematical foundation and nurtured my passion 
-      for IT, particularly in the field of competitive programming. Throughout those years, I actively participated in 
-      math and IT summer schools, which contributed to my continuous improvement. These efforts led to notable 
-      achievements, including victories and prize placements in competitions such as the "Moscow School Olympiad in 
-      Informatics" and the "ITMO Informatics Olympiad."
-      </p>,
+    content: (
+      <p>
+        During my time at my high and middle school, I acquired a strong mathematical foundation and nurtured my passion
+        for IT, particularly in the field of competitive programming. Throughout those years, I actively participated in
+        math and IT summer schools, which contributed to my continuous improvement. These efforts led to notable
+        achievements, including victories and prize placements in competitions such as the "Moscow School Olympiad in
+        Informatics" and the "ITMO Informatics Olympiad."
+      </p>
+    ),
   },
   {
     date: 'September 2018 - June 2022',
     location: 'Summer HPC academy, LKSH, MIPT, FoxFord',
     title: 'Active participation in off-site mathematical and computer science schools',
-    content: <p>
-      Active participation in esteemed off-site mathematical and computer science schools has been a cornerstone 
-      of my IT journey, providing me with boundless motivation and inspiration. These include notable programs such 
-      as LKSH (summer IT school), MIPT Math Summer School, FoxFord School, and the Summer HPC Academy. Through these 
-      immersive experiences, I have continually expanded my knowledge, honed my skills, and fostered a deep passion 
-      for the world of technology.
-    </p>,
+    content: (
+      <p>
+        Active participation in esteemed off-site mathematical and computer science schools has been a cornerstone of my
+        IT journey, providing me with boundless motivation and inspiration. These include notable programs such as LKSH
+        (summer IT school), MIPT Math Summer School, FoxFord School, and the Summer HPC Academy. Through these immersive
+        experiences, I have continually expanded my knowledge, honed my skills, and fostered a deep passion for the
+        world of technology.
+      </p>
+    ),
   },
 ];
 
@@ -241,13 +249,15 @@ export const experience: TimelineItem[] = [
     title: 'Data Analyst, LLM Engineer',
     content: (
       <p>
-        Developing tools for automating the analysis and control of project data. 
-        This involved utilizing <strong>Python</strong> to automate data extraction from relational models and perform 
-        analysis using <strong>Pandas</strong> queries. Additionally, I developed tools to automate data interactions and enable 
-        automatic data visualization using libraries such as <strong>NetworkX</strong> and <strong>Graphviz</strong>. I also gained proficiency in 
-        Python libraries for NLP tasks, including <strong>HuggingFace transformers</strong> and <strong>langchain</strong> pipelines, as well as 
-        vectorization tools including vector databases such as <strong>FAISS</strong> and <strong>Chroma</strong> and libraries like <strong>Spacy</strong>, <strong>NLTK</strong> and <strong>Natasha</strong>. 
-        Furthermore, I utilized server deployment tools to ensure efficient deployment of the developed solutions.
+        Developing tools for automating the analysis and control of project data. This involved utilizing{' '}
+        <strong>Python</strong> to automate data extraction from relational models and perform analysis using{' '}
+        <strong>Pandas</strong> queries. Additionally, I developed tools to automate data interactions and enable
+        automatic data visualization using libraries such as <strong>NetworkX</strong> and <strong>Graphviz</strong>. I
+        also gained proficiency in Python libraries for NLP tasks, including <strong>HuggingFace transformers</strong>{' '}
+        and <strong>langchain</strong> pipelines, as well as vectorization tools including vector databases such as{' '}
+        <strong>FAISS</strong> and <strong>Chroma</strong> and libraries like <strong>Spacy</strong>,{' '}
+        <strong>NLTK</strong> and <strong>Natasha</strong>. Furthermore, I utilized server deployment tools to ensure
+        efficient deployment of the developed solutions.
       </p>
     ),
   },
@@ -257,13 +267,12 @@ export const experience: TimelineItem[] = [
     title: 'C++ Developer',
     content: (
       <p>
-        Development of an optimized C/C++ backend implementation for the GraphBLAS standard at the Research 
-        Institute of Computational Mathematics and Cybernetics, Moscow State University, as part of a grant. 
-        This involved creating efficient graph algorithm implementations specifically designed for the targeted 
-        processor architecture and establishing a comprehensive testing infrastructure. Throughout the project, 
-        I utilized a range of technologies, including <strong>C++</strong>, <strong>OpenMP</strong>, 
-        <strong>CMake</strong>, <strong>gtest</strong>, <strong>Git</strong>, <strong>GitHub Actions</strong>, 
-        to ensure smooth development and integration processes.
+        Development of an optimized C/C++ backend implementation for the GraphBLAS standard at the Research Institute of
+        Computational Mathematics and Cybernetics, Moscow State University, as part of a grant. This involved creating
+        efficient graph algorithm implementations specifically designed for the targeted processor architecture and
+        establishing a comprehensive testing infrastructure. Throughout the project, I utilized a range of technologies,
+        including <strong>C++</strong>, <strong>OpenMP</strong>,<strong>CMake</strong>, <strong>gtest</strong>,{' '}
+        <strong>Git</strong>, <strong>GitHub Actions</strong>, to ensure smooth development and integration processes.
       </p>
     ),
   },
@@ -304,7 +313,8 @@ export const fact: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Feel free to reach out to me using either the submit form or through any of the listed platforms. I look forward to hearing from you!',
+  description:
+    'Feel free to reach out to me using either the submit form or through any of the listed platforms. I look forward to hearing from you!',
   items: [
     {
       type: ContactType.Email,
