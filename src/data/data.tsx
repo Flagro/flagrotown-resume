@@ -90,12 +90,27 @@ export const heroData: Hero = {
 /**
  * About section
  */
+
+// Birthdate
+const birthDate = new Date('2001-01-18');
+
+// Function to calculate age
+const calculateAge = (birthDate: Date): number => {
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+};
+
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Passionate software developer and data analyst with a strong background in competitive programming and a Bachelor's degree in Computer Science. Skilled in C/C++, high-performance computing (HPC), data analysis, relational databases, and NLP tasks. Excited to tackle complex software development and data analysis challenges with a strong foundation in mathematics and a commitment to continuous learning.`,
   aboutItems: [
     {label: 'Location', text: 'Montenegro, Podgorica', Icon: MapIcon},
-    {label: 'Age', text: '22', Icon: CalendarIcon},
+    {label: 'Age', text: `${calculateAge(birthDate)}`, Icon: CalendarIcon},
     {label: 'Nationality', text: 'Russian', Icon: FlagIcon},
     {label: 'Interests', text: 'Backend Development, Data Analysis', Icon: SparklesIcon},
     {
