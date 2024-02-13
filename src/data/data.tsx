@@ -277,7 +277,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'September 2021 - present',
+    date: 'September 2021 - September 2023',
     location: 'Research Computing Center of Moscow State University',
     title: 'C++ Developer',
     content: (
